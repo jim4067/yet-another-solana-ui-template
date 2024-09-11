@@ -32,7 +32,7 @@ export default function NavBar() {
 						},
 					})}
 				>
-					<Link href="/">MARKETPLACE</Link>
+					<Link href="/">YASUT</Link>
 				</section>
 
 				<section

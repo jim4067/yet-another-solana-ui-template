@@ -59,7 +59,7 @@ export let pages = [
 	},
 
 	{
-		link: "/profile",
-		label: "Profile",
+		link: "/examples",
+		label: "Examples",
 	},
 ];
