@@ -45,7 +45,7 @@ export default function Footer() {
 						})}
 					>
 						<span>
-							<Link href="https://github.com/jim4067/anchor-marketplace-ui">
+							<Link href="https://github.com/jim4067/yet-another-solana-ui-template">
 								Fork Me
 							</Link>
 						</span>{" "}
