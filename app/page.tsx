@@ -8,6 +8,8 @@ export default function Page() {
 				backgroundColor: "primaryBackground",
 				color: "textSecondary",
 				flex: 1,
+				alignItems: "center",
+				height: "50vh",
 			})}
 		>
 			<section className={container({})}>
@@ -15,19 +17,28 @@ export default function Page() {
 					className={flex({
 						gap: 10,
 						flexDir: "column",
+						alignContent: "center",
+						justifyContent: "center",
 					})}
 				>
 					<section
-						className={css({
-							fontSize: " headline30",
-							fontWeight: " headline30",
-							flexWrap: "wrap",
+						className={flex({
+							flexDirection: "column",
+							justifyContent: "center",
+							alignItems: "center",
+							gap: "10",
 						})}
 					>
-						Home Page
+						<section>
+							Yet another Solana UI template using - YASUT
+						</section>
+						<section>SOLANA + NEXT.JS + PANDA.CSS </section>
+						<section>
+							`git clone
+							https://github.com/jim4067/yet-another-solana-ui-template.git
+							`
+						</section>
 					</section>
-
-					<section>Welcome home</section>
 				</section>
 			</section>
 		</section>
