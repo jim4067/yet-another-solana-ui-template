@@ -1,4 +1,6 @@
 import { container, flex } from "@/styled-system/patterns";
+import { AirdropBtn } from "./components/airdrop";
+import { SignMsgBtn } from "./components/signMessage";
 
 export default function Page() {
 	return (
@@ -9,7 +11,22 @@ export default function Page() {
 				justifyContent: "center",
 			})}
 		>
-			<section className={container({})}>TODO</section>
+			<section
+				className={container({
+					display: "flex",
+					gap: 20,
+					flexDirection: "column",
+					alignItems: "center",
+					backgroundColor: "primaryBackground",
+				})}
+			>
+				<section>
+					<AirdropBtn />
+				</section>
+				<section>
+					<SignMsgBtn />
+				</section>
+			</section>
 		</section>
 	);
 }

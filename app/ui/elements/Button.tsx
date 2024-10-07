@@ -11,7 +11,6 @@ export const Button = ({ children, onClick }: ButtonProps) => (
 		className={css({
 			border: "1.5px solid ",
 			borderRadius: "100px",
-			height: "48px",
 			overflow: "hidden",
 			width: "fit-content",
 		})}
@@ -23,7 +22,7 @@ export const Button = ({ children, onClick }: ButtonProps) => (
 				justifyContent: "center",
 				alignItems: "center",
 				gap: 2,
-				padding: "0 20px",
+				padding: "5px 20px",
 				width: "100%",
 				_hover: {
 					bgGradient: "blackGradient",

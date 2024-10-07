@@ -65,7 +65,11 @@ export default function NavBar() {
 					>
 						<ConnectWalletBtn />
 					</div>
-					<div>
+					<div
+						className={css({
+							lineHeight: 0,
+						})}
+					>
 						<ThemeToggle />
 					</div>
 				</section>

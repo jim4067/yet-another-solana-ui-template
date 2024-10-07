@@ -37,8 +37,8 @@ export const WalletLightMode = () => (
 export const MoonIcon = () => {
 	return (
 		<svg
-			width="56"
-			height="56"
+			width="40"
+			height="40"
 			viewBox="0 0 56 56"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
@@ -104,8 +104,8 @@ export const MoonIcon = () => {
 export const SunIcon = () => {
 	return (
 		<svg
-			width="56"
-			height="56"
+			width="40"
+			height="40"
 			viewBox="0 0 56 56"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

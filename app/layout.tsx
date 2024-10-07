@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-
 import { Inter } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
+
 import Footer from "./ui/components/Footer";
 import NavBar from "./ui/components/nav/NavBar";
 import { Wallet } from "./ui/components/Wallet";
@@ -35,6 +36,8 @@ export default function RootLayout({
 					enableSystem
 					themes={["dark", "light"]}
 				>
+					<Toaster />
+
 					<Wallet>
 						<header>
 							<NavBar />
