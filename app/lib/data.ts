@@ -1,31 +1,16 @@
 import {
-	DigitalAsset,
-	fetchDigitalAssetWithAssociatedToken,
+	DigitalAssetWithToken,
+	fetchAllDigitalAssetWithTokenByOwner,
 } from "@metaplex-foundation/mpl-token-metadata";
-import {
-	isSome,
-	Umi,
-	publicKey as UmiPublicKey,
-} from "@metaplex-foundation/umi";
+import { Umi, publicKey as UmiPublicKey } from "@metaplex-foundation/umi";
 import { PublicKey } from "@solana/web3.js";
-import axios from "axios";
 
-export async function fetchAssetByMint(
+export async function fetchUserAssets(
 	umiInstance: Umi,
-	mint: string,
 	owner: PublicKey
-): Promise<DigitalAsset & { name: string; image: string }> {
-	const resp = await fetchDigitalAssetWithAssociatedToken(
+): Promise<DigitalAssetWithToken[]> {
+	return await fetchAllDigitalAssetWithTokenByOwner(
 		umiInstance,
-		UmiPublicKey(mint),
 		UmiPublicKey(owner)
 	);
-	const image = (await axios.get(resp.metadata.uri)).data.image;
-	const name = resp.metadata.name;
-
-	return {
-		...resp,
-		image,
-		name,
-	};
 }
